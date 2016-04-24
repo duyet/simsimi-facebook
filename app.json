@@ -16,7 +16,7 @@
     "FB_PAGE_ACCESS_TOKEN": {
       "description": "Page Access Token",
       "value": ""
-    },
+    }
   },
   "engines": {
     "node": "5.10.1"
