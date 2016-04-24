@@ -44,7 +44,7 @@ function processEvent(event) {
         request(options, function (error, response, body) {
           if (error) throw new Error(error);
 
-          if (isDefined(body.response)) {
+          if (isDefined(body)) {
             let responseText = body.response;
 
             console.log('==> body', body);
@@ -53,7 +53,7 @@ function processEvent(event) {
             sendFBMessage(sender, {text: responseText});
           }
 
-          console.log(body);
+          console.log(' ==> ', body);
         });
 
 
