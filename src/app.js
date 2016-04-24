@@ -8,7 +8,7 @@ const request = require('request');
 const REST_PORT = (process.env.PORT || 5000);
 const SIMSIMI_KEY = process.env.SIMSIMI_KEY;
 const SIMSIMI_LANGUAGE = process.env.SIMSIMI_LANGUAGE || 'vn';
-const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
+const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN || 'none';
 const FB_PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN;
 
 const sessionIds = new Map();
@@ -49,7 +49,7 @@ function processEvent(event) {
 
             console.log('==> body', body);
             console.log('==> response', response);
-            
+
             sendFBMessage(sender, {text: responseText});
           }
 
