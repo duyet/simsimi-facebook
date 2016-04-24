@@ -44,8 +44,8 @@ function processEvent(event) {
         request(options, function (error, response, body) {
           if (error) throw new Error(error);
 
-          if (isDefined(response.response)) {
-            let responseText = response.response;
+          if (isDefined(body.response)) {
+            let responseText = body.response;
 
             console.log('==> body', body);
             console.log('==> response', response);
