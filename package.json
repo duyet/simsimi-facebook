@@ -1,0 +1,23 @@
+{
+  "name": "simsimi-facebook",
+  "version": "1.0.0",
+  "description": "Simsimi Facebook integration",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Van-Duyet Le <me@duyetdev.com> (https://duyetdev.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "4.13.3",
+    "html-entities": "^1.2.0",
+    "node-uuid": "^1.4.7",
+    "request": "^2.71.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duyetdev/simsimi-facebook"
+  }
+}
