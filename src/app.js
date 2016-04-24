@@ -48,12 +48,12 @@ function processEvent(event) {
             let responseText = body.response;
 
             console.log('==> body', body);
-            console.log('==> response', response);
+            console.log('==> FB_PAGE_ACCESS_TOKEN', FB_PAGE_ACCESS_TOKEN);
 
             sendFBMessage(sender, {text: responseText});
           }
 
-          console.log(' ==> ', body);
+          // console.log(' ==> ', body);
         });
 
 
