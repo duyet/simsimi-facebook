@@ -1,0 +1,24 @@
+{
+  "name": "Simsimi Facebook integration",
+  "description": "Create Facebook bots with natural language understanding based on Simsimi API.",
+  "repository": "https://github.com/duyetdev/simsimi-facebook",
+  "logo": "",
+  "keywords": ["simsimi", "duyetdev", "facebook", "natural language", "api"],
+  "env": {
+    "SIMSIMI_KEY": {
+      "description": "Simsimi Key",
+      "value": ""
+    },
+    "SIMSIMI_LANGUAGE": {
+      "description": "Language",
+      "value": "vn"
+    },
+    "FB_PAGE_ACCESS_TOKEN": {
+      "description": "Page Access Token",
+      "value": ""
+    },
+  },
+  "engines": {
+    "node": "5.10.1"
+  }
+}
